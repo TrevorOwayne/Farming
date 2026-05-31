@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Airdrop Farming Blueprint — Zero Capital Crypto System</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Animated grid background -->
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- ================================================
+       NAVIGATION
+  ================================================ -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <i class="fa-solid fa-coins"></i>
+        AZTECH CRYPTO
+      </div>
+      <div class="nav-links">
+        <a href="#pain">The Problem</a>
+        <a href="#solution">System</a>
+        <a href="#products">Blueprints</a>
+        <a href="#faq">FAQ</a>
+        <a href="#products" class="nav-cta">GET ACCESS</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================================================
+       LIVE TICKER BAR
+  ================================================ -->
+  <div class="ticker">
+    <div class="ticker-inner" id="tickerInner"></div>
+  </div>
+
+  <!-- ================================================
+       HERO SECTION
+  ================================================ -->
+  <section class="hero" id="hero">
+    <div class="container">
+
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Live · Zero Capital Farming Blueprint
+      </div>
+
+      <h1>
+        <span class="line-dim">The System Is Already Open</span>
+        <span class="line-gold">Are You Inside<br>Or Watching?</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Every day you wait, wallets that started with
+        <strong>$0</strong> are farming their way to
+        5-figure airdrop payouts. This blueprint is the
+        exact roadmap — step by step.
+      </p>
+
+      <div class="hero-ctas">
+        <button class="btn-primary" onclick="scrollToProducts()">
+          <i class="fa-solid fa-bolt"></i> Get The Blueprint Now
+        </button>
+        <button class="btn-secondary" onclick="document.getElementById('pain').scrollIntoView({behavior:'smooth'})">
+          Show Me Why
+        </button>
+      </div>
+
+      <!-- Hero coin image -->
+      <div class="hero-coin">
+        <img
+          src="Airdrop_farm_2_20260519_205002_0000.jpg"
+          alt="Bitcoin coin"
+          onerror="this.style.display='none'"
+        />
+      </div>
+
+      <!-- Stats bar -->
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-num" id="statFarmers">2,841</div>
+          <div class="stat-label">Active Farmers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">$0</div>
+          <div class="stat-label">Capital Required</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Chains Covered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">10–20</div>
+          <div class="stat-label">Mins / Day</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================
+       PAIN POINTS SECTION
+  ================================================ -->
+  <section class="pain-section section" id="pain">
+    <div class="container">
+      <div class="pain-grid">
+
+        <!-- Left column: headline + pain cards -->
+        <div>
+          <p class="section-label">// The Hard Truth</p>
+          <h2 class="section-title">
+            You've Seen People<br>
+            Win Big On Airdrops.<br>
+            <span class="text-gold">You've Gotten Nothing.</span>
+          </h2>
+          <p class="section-body">
+            It's not luck. It's not capital. It's that you don't
+            have a <em>system</em>. Without one, you're invisible
+            to every airdrop algorithm.
+          </p>
+
+          <ul class="pain-list">
+            <li class="pain-item">
+              <div class="pain-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+              <div>
+                <h4>Farming random chains with no strategy</h4>
+                <p>Hopping from hype to hype leaves zero on-chain footprint — exactly what projects screen out.</p>
+              </div>
+            </li>
+            <li class="pain-item">
+              <div class="pain-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h4>Only farming when Twitter screams "airdrop coming"</h4>
+                <p>By then the eligibility window is closed. Winners got in 6 months earlier.</p>
+              </div>
+            </li>
+            <li class="pain-item">
+              <div class="pain-icon"><i class="fa-solid fa-chart-line-down"></i></div>
+              <div>
+                <h4>Tracking nothing — so proving nothing</h4>
+                <p>Projects reward wallets with consistent, documented histories. Your wallet looks like a ghost.</p>
+              </div>
+            </li>
+            <li class="pain-item">
+              <div class="pain-icon"><i class="fa-solid fa-wallet"></i></div>
+              <div>
+                <h4>Thinking you need capital to start</h4>
+                <p>The entire premise is wrong. The blueprint proves it. $0 capital, real results.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right column: emotional callout + cover image -->
+        <div>
+          <div class="callout-box">
+            <p class="big-q">
+              "What if the next $10,000 airdrop is 60 days away —
+              and your wallet still isn't positioned?"
+            </p>
+            <p class="callout-body">
+              Projects like Arbitrum, zkSync, and Blur distributed
+              <strong class="text-gold">millions of dollars</strong>
+              to wallets that simply showed up — consistently,
+              on-chain, before the announcement. The ones who missed
+              it just didn't have a map.
+            </p>
+          </div>
+
+          <div class="cover-img-wrap">
+            <img
+              src="airdrop_farming_with_zero_capital_20260519_205154_0000.png"
+              alt="Airdrop Farming With Zero Capital"
+              onerror="this.style.display='none'"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SOLUTION / FEATURES SECTION
+  ================================================ -->
+  <section class="solution-section section" id="solution">
+    <div class="container">
+
+      <div class="section-center">
+        <p class="section-label">// The Blueprint</p>
+        <h2 class="section-title">
+          A System That Builds Your<br>
+          Eligibility <span class="text-gold">Automatically</span>
+        </h2>
+      </div>
+
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>3-Wallet Security Setup</h3>
+          <p>Main, backup, and farming wallets. Know exactly what touches what — and protect your main holdings completely.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <h3>Multi-Chain Expansion Map</h3>
+          <p>Start on Base, Sui, StarkNet. Scale to ZkSync, Linea, Mode, Scroll, Fuel. Each chain adds a new airdrop vector.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <h3>Daily + Weekly Routine</h3>
+          <p>Swaps, dApp interactions, quests, free mints, bridges — structured to run in 10–20 minutes a day.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-table-list"></i></div>
+          <h3>Tracking System</h3>
+          <p>Google Sheets, Notion, DeBank, Zapper. Track tasks, chains, dates and progress so your footprint is undeniable.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Eligibility Optimization</h3>
+          <p>Repeat routines, engage early, stay active monthly. This is exactly what airdrop algorithms reward.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-rotate"></i></div>
+          <h3>Restart & Scale Cycles</h3>
+          <p>Every cycle adds a new chain, new tasks, expanded footprint. Your farming operation compounds over time.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FLOWCHART PREVIEW SECTION
+  ================================================ -->
+  <section class="flowchart-section section" id="flowchart">
+    <div class="container">
+
+      <div class="section-center">
+        <p class="section-label">// The 9-Step System</p>
+        <h2 class="section-title">
+          Your Entire Operation<br>
+          On One <span class="text-gold">Flowchart</span>
+        </h2>
+      </div>
+
+      <div class="flowchart-preview">
+        <div class="flow-node flow-start">
+          <div class="node-num">START</div>
+          <h4>Your Journey Begins Here</h4>
+        </div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">
+          <div class="node-num">STEP 1</div>
+          <h4>Create 3-Wallet Setup</h4>
+          <p>Main · Backup · Farming</p>
+        </div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">
+          <div class="node-num">STEP 2</div>
+          <h4>Choose 3 Starter Chains</h4>
+          <p>Base · Sui · StarkNet</p>
+        </div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">
+          <div class="node-num">STEP 3</div>
+          <h4>Build Daily / Weekly Routine</h4>
+          <p>Swaps · dApps · Quests · Bridges</p>
+        </div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">
+          <div class="node-num">STEPS 4–6</div>
+          <h4>Expand Chains + Track Everything</h4>
+          <p>ZkSync · Linea · Mode + Sheets / DeBank</p>
+        </div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">
+          <div class="node-num">STEP 7</div>
+          <h4>Eligibility Optimization</h4>
+          <p>Consistent footprint · Early engagement</p>
+        </div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node flow-claim">
+          <div class="node-num">STEP 8</div>
+          <h4>Claim Airdrops 💸</h4>
+          <p>Verify links · Claim safely · Secure rewards</p>
+        </div>
+        <div class="flow-arrow"></div>
+        <div class="flow-loop">↺ RESTART CYCLE</div>
+        <div class="flow-node">
+          <div class="node-num">STEP 9</div>
+          <h4>Restart + Add New Chains & Wallets</h4>
+          <p>Compound your footprint every cycle</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================
+       SOCIAL PROOF / TESTIMONIALS
+  ================================================ -->
+  <section class="proof-section section" id="proof">
+    <div class="container">
+
+      <div class="section-center">
+        <p class="section-label">// Community Results</p>
+        <h2 class="section-title">
+          Farmers Are Already <span class="text-gold">Winning</span>
+        </h2>
+      </div>
+
+      <div class="proof-grid">
+
+        <div class="proof-card">
+          <div class="proof-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="proof-quote">
+            "I was skeptical at first. Zero capital? Really? But I followed
+            the flowchart step by step on Base and Sui. Three months later,
+            $1,400 in airdrop rewards. I hadn't spent a dime."
+          </p>
+          <div class="proof-author">
+            <div class="proof-avatar">AK</div>
+            <div>
+              <div class="proof-name">Ahmed K.</div>
+              <div class="proof-meta">Lagos, Nigeria · Farmer since Nov 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proof-card">
+          <div class="proof-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="proof-quote">
+            "The tracking system alone changed everything. I stopped guessing
+            and started building real on-chain history. The daily 20-minute
+            routine is dead simple. Highly recommend."
+          </p>
+          <div class="proof-author">
+            <div class="proof-avatar">CJ</div>
+            <div>
+              <div class="proof-name">Chisom J.</div>
+              <div class="proof-meta">Abuja, Nigeria · Multi-chain farmer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proof-card">
+          <div class="proof-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="proof-quote">
+            "Level 3 Full Farmer Mode has me positioned across 7 chains.
+            I know what I'm doing, when to do it, how to optimize.
+            This isn't just a PDF — it's a playbook."
+          </p>
+          <div class="proof-author">
+            <div class="proof-avatar">EM</div>
+            <div>
+              <div class="proof-name">Emmanuel M.</div>
+              <div class="proof-meta">Accra, Ghana · Advanced farmer</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       PRODUCTS / PRICING SECTION
+  ================================================ -->
+  <section class="products-section section" id="products">
+    <div class="container">
+
+      <div class="section-center">
+        <p class="section-label">// Choose Your Blueprint</p>
+        <h2 class="section-title">
+          Get The System That<br>
+          <span class="text-gold">Positions You First</span>
+        </h2>
+        <p class="products-sub">
+          All blueprints are digital PDFs — instant access after payment.
+          No shipping. No waiting. Start farming today.
+        </p>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- ── PRODUCT CARD 1 — Bundle (Featured) ── -->
+        <div class="product-card featured">
+          <div class="product-badge">BEST VALUE</div>
+
+          <div class="product-cover-wrap">
+            <img
+              src="airdrop_farming_with_zero_capital_20260519_205154_0000.png"
+              alt="Full Bundle"
+              class="product-cover"
+              onerror="this.style.display='none'"
+            />
+          </div>
+
+          <div class="product-body">
+            <div class="product-tag">Complete Bundle</div>
+            <h3 class="product-title">Full Airdrop Farming Blueprint Bundle</h3>
+            <p class="product-desc">
+              Everything you need: the zero-capital beginner guide, the scaling
+              system, and the multi-chain expansion flowchart. The complete stack.
+            </p>
+            <div class="product-price-row">
+              <span class="product-price">$19.99</span>
+              <span class="product-price-old">$49.99</span>
+            </div>
+            <p class="product-note">One-time payment · Instant PDF delivery</p>
+            <ul class="product-includes">
+              <li><i class="fa-solid fa-check"></i> Airdrop Farming With Zero Capital</li>
+              <li><i class="fa-solid fa-check"></i> Scaling Your System</li>
+              <li><i class="fa-solid fa-check"></i> Scaling Flowchart System</li>
+              <li><i class="fa-solid fa-check"></i> Bonus: Tracker Template</li>
+            </ul>
+
+            <!--
+              ════════════════════════════════════════════════
+              PAYMENT LINK — PRODUCT 1 (Bundle)
+              Replace the # below with your actual payment URL
+              e.g. https://paystack.com/pay/your-bundle-link
+                   https://flutterwave.com/pay/your-bundle-link
+                   https://gumroad.com/l/your-product
+              ════════════════════════════════════════════════
+            -->
+            <a href="#" class="btn-buy" target="_blank" rel="noopener">
+              <i class="fa-solid fa-lock"></i> Buy Now — $19.99
+            </a>
+
+          </div>
+        </div>
+
+        <!-- ── PRODUCT CARD 2 — Beginner Guide ── -->
+        <div class="product-card">
+
+          <div class="product-cover-wrap">
+            <img
+              src="Airdrop_Farming_With_Zero_Capital_20260519_205225_0000.png"
+              alt="Airdrop Farming With Zero Capital"
+              class="product-cover"
+              onerror="this.style.display='none'"
+            />
+          </div>
+
+          <div class="product-body">
+            <div class="product-tag">Beginner</div>
+            <h3 class="product-title">Airdrop Farming With Zero Capital</h3>
+            <p class="product-desc">
+              The foundational crypto blueprint for beginners. Learn to position
+              your wallet across multiple chains without spending a cent.
+            </p>
+            <div class="product-price-row">
+              <span class="product-price">$7.99</span>
+              <span class="product-price-old">$14.99</span>
+            </div>
+            <p class="product-note">Perfect starting point</p>
+            <ul class="product-includes">
+              <li><i class="fa-solid fa-check"></i> Wallet setup guide</li>
+              <li><i class="fa-solid fa-check"></i> Starter chain selection</li>
+              <li><i class="fa-solid fa-check"></i> Daily routine framework</li>
+              <li><i class="fa-solid fa-check"></i> Free activity types</li>
+            </ul>
+
+            <!--
+              ════════════════════════════════════════════════
+              PAYMENT LINK — PRODUCT 2 (Beginner Guide)
+              Replace the # below with your actual payment URL
+              e.g. https://paystack.com/pay/your-beginner-link
+              ════════════════════════════════════════════════
+            -->
+            <a href="#" class="btn-buy" target="_blank" rel="noopener">
+              <i class="fa-solid fa-lock"></i> Buy Now — $7.99
+            </a>
+
+          </div>
+        </div>
+
+        <!-- ── PRODUCT CARD 3 — Scaling System ── -->
+        <div class="product-card">
+
+          <div class="product-cover-wrap">
+            <img
+              src="Airdrop_farm_2_20260519_205002_0000.jpg"
+              alt="Scaling Your Airdrop Farming System"
+              class="product-cover"
+              onerror="this.style.display='none'"
+            />
+          </div>
+
+          <div class="product-body">
+            <div class="product-tag">Advanced</div>
+            <h3 class="product-title">Scaling Your Airdrop Farming System</h3>
+            <p class="product-desc">
+              Move from random interactions to a systemized multi-chain operation.
+              The 3 scaling foundations, levels, and monthly reset protocol.
+            </p>
+            <div class="product-price-row">
+              <span class="product-price">$9.99</span>
+              <span class="product-price-old">$19.99</span>
+            </div>
+            <p class="product-note">For farmers ready to level up</p>
+            <ul class="product-includes">
+              <li><i class="fa-solid fa-check"></i> 3 Scaling Foundations</li>
+              <li><i class="fa-solid fa-check"></i> Zero-Capital Scaling Levels</li>
+              <li><i class="fa-solid fa-check"></i> Common mistakes to avoid</li>
+              <li><i class="fa-solid fa-check"></i> Daily + weekly routine</li>
+            </ul>
+
+            <!--
+              ════════════════════════════════════════════════
+              PAYMENT LINK — PRODUCT 3 (Scaling System)
+              Replace the # below with your actual payment URL
+              e.g. https://paystack.com/pay/your-scaling-link
+              ════════════════════════════════════════════════
+            -->
+            <a href="#" class="btn-buy" target="_blank" rel="noopener">
+              <i class="fa-solid fa-lock"></i> Buy Now — $9.99
+            </a>
+
+          </div>
+        </div>
+
+        <!-- ── PRODUCT CARD 4 — Flowchart ── -->
+        <div class="product-card">
+
+          <div class="product-cover-wrap product-cover-placeholder">
+            <i class="fa-solid fa-file-pdf"></i>
+          </div>
+
+          <div class="product-body">
+            <div class="product-tag">Visual System</div>
+            <h3 class="product-title">Scaling Flowchart System — Guided Example</h3>
+            <p class="product-desc">
+              The full 9-step visual flowchart with guided notes. Print it or use
+              it digitally. Your entire farming roadmap at a glance.
+            </p>
+            <div class="product-price-row">
+              <span class="product-price">$4.99</span>
+              <span class="product-price-old">$9.99</span>
+            </div>
+            <p class="product-note">Visual learners love this</p>
+            <ul class="product-includes">
+              <li><i class="fa-solid fa-check"></i> 9-step visual flowchart</li>
+              <li><i class="fa-solid fa-check"></i> Guided action notes per step</li>
+              <li><i class="fa-solid fa-check"></i> Chain selection map</li>
+              <li><i class="fa-solid fa-check"></i> Restart cycle guide</li>
+            </ul>
+
+            <!--
+              ════════════════════════════════════════════════
+              PAYMENT LINK — PRODUCT 4 (Flowchart)
+              Replace the # below with your actual payment URL
+              e.g. https://paystack.com/pay/your-flowchart-link
+              ════════════════════════════════════════════════
+            -->
+            <a href="#" class="btn-buy" target="_blank" rel="noopener">
+              <i class="fa-solid fa-lock"></i> Buy Now — $4.99
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       GUARANTEE SECTION
+  ================================================ -->
+  <section class="section" id="guarantee" style="position:relative;z-index:1">
+    <div class="container">
+      <div class="guarantee-box">
+        <i class="fa-solid fa-shield-check"></i>
+        <h3>100% Satisfaction Guarantee</h3>
+        <p>
+          If you follow the system for 30 days and don't see your on-chain
+          footprint growing, contact us for a full refund. No questions, no hoops.
+          We're confident in what this blueprint does.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FAQ SECTION
+  ================================================ -->
+  <section class="faq-section section" id="faq">
+    <div class="container">
+
+      <div class="section-center">
+        <p class="section-label">// Common Questions</p>
+        <h2 class="section-title">
+          We Know What You're<br>
+          <span class="text-gold">About To Ask</span>
+        </h2>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Do I really need zero capital to start?
+            <i class="fa-solid fa-plus icon"></i>
+          </div>
+          <div class="faq-a">Yes. The system is built around free or near-free actions — gasless swaps, free mints, testnet tasks, and quest platforms. You build real on-chain history without spending money on transactions.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            How much time does this take per day?
+            <i class="fa-solid fa-plus icon"></i>
+          </div>
+          <div class="faq-a">The daily routine is designed for 10–20 minutes. You do 1–2 swaps, some dApp interactions, and complete any daily quests available. Weekly, you spend a bit more time bridging and exploring new dApps.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            I'm a complete beginner — will this work for me?
+            <i class="fa-solid fa-plus icon"></i>
+          </div>
+          <div class="faq-a">Absolutely. The blueprint starts at Level 1: Single-Chain Foundation. You pick one chain (Base or Sui), learn the pattern, build consistency — then expand. Every step is explained clearly.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Are airdrops guaranteed?
+            <i class="fa-solid fa-plus icon"></i>
+          </div>
+          <div class="faq-a">No airdrop is 100% guaranteed — that's crypto. What the system does is maximize your eligibility across multiple chains so your odds are significantly higher across many potential airdrops. More shots, better aim.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            What payment methods do you accept?
+            <i class="fa-solid fa-plus icon"></i>
+          </div>
+          <div class="faq-a">We accept card payments (Visa/Mastercard/Verve), crypto (BTC, ETH, USDT), local bank transfer (NGN), and international wire transfers. After payment your PDF is delivered to your email instantly.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FINAL CTA SECTION
+  ================================================ -->
+  <section class="final-cta" id="finalcta">
+    <div class="container">
+      <div class="final-cover">
+        <img
+          src="Airdrop_Farming_With_Zero_Capital_20260519_205225_0000.png"
+          alt="Blueprint Cover"
+          onerror="this.style.display='none'"
+        />
+      </div>
+      <h2>
+        The Window Is <span class="text-gold">Open Right Now.</span><br>
+        Will You Be Inside?
+      </h2>
+      <p>
+        Every chain you haven't touched yet is an airdrop you're not
+        eligible for. Fix that. Today. With $0.
+      </p>
+
+      <!--
+        ════════════════════════════════════════════════
+        PAYMENT LINK — FINAL CTA BUTTON
+        Replace the # below with your main payment URL
+        (usually the bundle or your most popular product)
+        ════════════════════════════════════════════════
+      -->
+      <a href="#" class="btn-primary" target="_blank" rel="noopener">
+        <i class="fa-solid fa-bolt"></i> Get The Blueprint Now
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">⬡ AZTECH CRYPTO LABS</div>
+      <p>© 2026 Aztech Crypto Labs · By Morbioks · All rights reserved</p>
+      <p class="footer-disclaimer">
+        Crypto investments carry risk. Airdrops are not guaranteed.
+        This is educational content, not financial advice.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Your JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>
